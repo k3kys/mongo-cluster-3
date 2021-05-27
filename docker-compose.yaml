@@ -17,7 +17,7 @@ services:
         ports:
             - 50003:27017
         volumes:
-            - shard1svr3:/data/db
+            - shardsvr3:/data/db
 
 volumes:
   cfgsvr3: {}
