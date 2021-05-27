@@ -13,7 +13,7 @@ services:
     shardsvr3:
         container_name: shardsvr3
         image: mongo
-        command: mongod --shardsvr --replSet shard1rs --port 27017 --dbpath /data/db
+        command: mongod --shardsvr --replSet shardrs --port 27017 --dbpath /data/db
         ports:
             - 50003:27017
         volumes:
@@ -21,4 +21,4 @@ services:
 
 volumes:
   cfgsvr3: {}
-  shard1svr3: {}
+  shardsvr3: {}
